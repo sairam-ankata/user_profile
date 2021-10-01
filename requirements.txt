@@ -1,4 +1,6 @@
+django==3.2.7
 django-storages==1.7.1
+django-oauth-toolkit==1.5.0
 raven==6.10.0
 enum34==1.1.6
 #requests-kerberos==0.12.0
@@ -13,4 +15,4 @@ pytest-django==3.5.0
 pytest-cov==2.7.1
 freezegun==0.3.12
 
-#psycopg2
+psycopg2
