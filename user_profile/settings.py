@@ -1,3 +1,4 @@
+import os
 """
 Django settings for user_profile project.
 
@@ -87,11 +88,11 @@ WSGI_APPLICATION = 'user_profile.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'userdata',
-       'USER': 'aerrow1',
-       'PASSWORD': 'qwerty',
-       'HOST': 'localhost',
-       'PORT': '5432',
+       'NAME': os.environ.get("POSTGRES_DB_NAME"),
+       'USER': os.environ.get("POSTGRES_USER_NAME"),
+       'PASSWORD': os.environ.get("POSTGRES_PASSWORD"),
+       'HOST': os.environ.get("POSTGRES_HOST"),
+       'PORT': os.environ.get("POSTGRES_PORT"),
    }
 }
 
